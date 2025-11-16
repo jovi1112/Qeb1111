@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Network Stresser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minecraft Network Stresser</h1>
+    <label for="server">Dirección del Servidor:</label>
+    <input type="text" id="server" placeholder="tu_servidor_minecraft.com">
+    <label for="port">Puerto:</label>
+    <input type="text" id="port" placeholder="25565 para Java, 19132 para Bedrock">
+    <button onclick="startStressing()">Iniciar Estrés</button>
+    <p id="status"></p>
+
+    <script src="stresser.js"></script>
+</body>
+</html>
